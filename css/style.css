@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url("../image/snakeground.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    left: 150px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+}
+#highscoreBox{
+    position: absolute;
+    top: 59px;
+    left: 150px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+}
+#nameBox
+{
+    background-color: yellow;
+    position: absolute;
+    top: 110px;
+    left: 150px;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+}
+
+
+#board{
+    background: linear-gradient(rgb(148, 230, 148),rgb(70, 59, 40));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    box-shadow: 5px 5px 11px #a2b1c6 , -5px -5px 11px #fff;
+}
+
+.head{
+    background: linear-gradient(red,yellow);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+.food{
+    background-color: yellow;
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+#play_img{
+    width: 65px;
+}
+.buttons{
+    display: none;
+}
+#preup{
+    position: absolute;
+    right: 39%;
+    top: 70%;
+}
+#predown{
+    position: absolute;
+    right: 39%;
+    top: 87%;
+}
+#preright{
+    position: absolute;
+    right: 22%;
+    top: 78.5%;
+}
+#preleft{
+    position: absolute;
+    right: 56.5%;
+    top: 78.5%;
+}
+#preplay{
+    position: absolute;
+    right: 39%;
+    top: 78.5%;
+}
+
+@media only screen and (max-width: 970px){
+    .buttons{
+        display: flex;
+        align-items: center;
+        width: 350px;
+        justify-content: center;
+        margin: auto;
+        padding-top: 20px;
+        height: 180px; 
+    }
+    
+    .buttons play_img{
+          width: 20px;
+    }
+    #nameBox{
+        font-size: 15px;
+        top: 2%;
+        left: 70%;
+    }
+    #scoreBox{
+        font-size: 15px;
+        top: 2%;
+        left: 10%;
+    }
+    #highscoreBox{
+        font-size: 15px;
+        top: 2%;
+        left: 40%;
+    }
+    
+}
