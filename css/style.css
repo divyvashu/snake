@@ -73,22 +73,22 @@
 .buttons{
     display: none;
 }
-#preup{
+#up{
     position: absolute;
     right: 39%;
     top: 70%;
 }
-#predown{
+#down{
     position: absolute;
     right: 39%;
     top: 87%;
 }
-#preright{
+#right{
     position: absolute;
     right: 22%;
     top: 78.5%;
 }
-#preleft{
+#left{
     position: absolute;
     right: 56.5%;
     top: 78.5%;
