@@ -1,4 +1,4 @@
-// Game constant and variables
+// Game constant and variables Vashu codes.....
 let inputDir = {x: 0, y: 0};
 const foodSound = new Audio('audio/food.mp3');
 const gameOverSound = new Audio('audio/gameover.mp3');
@@ -29,6 +29,13 @@ function isCollide(snake){
             return true;
         }
     }
+
+    /*if you want solid walls
+    if(snake[0].x >= 18 || snake[0].x <=0 || snake[0].y >= 18 || snake[0].y <=0){
+        return true;
+    }*/
+
+
     //If you bump into the wall
     if (snake[0].x >= 18) {
         snake[0].x = 0;
